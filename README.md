@@ -198,5 +198,4 @@ allowedOrigins("http://localhost:5173")
 
 
 
-If you want, I can **customize this using your actual GitHub repo (name, modules, endpoints)** so it looks even more professional for HCL evaluation.
-```
+
