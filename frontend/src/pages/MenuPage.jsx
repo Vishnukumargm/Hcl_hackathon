@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import axios from "../api/axiosConfig";
 import { CartContext } from "../context/CartContext";
+import CartSidebar from "../components/CartSidebar";
 
 export default function MenuPage() {
   const [products, setProducts] = useState([]);
@@ -26,13 +27,14 @@ export default function MenuPage() {
                 <p>₹{product.price}</p>
 
                 <button
-                  className="btn btn-primary"
+                  className="btn btn-success"
                   onClick={() => addToCart(product)}
                 >
                   Add to Cart
                 </button>
               </div>
             </div>
+            <CartSidebar />
           </div>
         ))}
       </div>
